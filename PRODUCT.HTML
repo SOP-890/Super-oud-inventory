@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product Details</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- QR Code Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+.qr-box {
+    margin: 25px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.qr-box h3 {
+    margin-bottom: 15px;
+}
+
+#qrcode {
+    display: inline-block;
+    padding: 10px;
+    background: white;
+}
+
+.print-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #d4af37;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="logo.png" width="120">
+        <h1>SUPER OUD</h1>
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="products.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+const result = document.getElementById("result");
+
+if (products[id]) {
+
+    const p = products[id];
+
+    result.innerHTML = `
+    
+    <div class="card">
+
+        <h2>${p.name}</h2>
+
+        <div class="row">
+            <b>Item Code :</b> ${p.code}
+        </div>
+
+        <div class="row">
+            <b>Stock :</b> ${p.stock} PCS
+        </div>
+
+        <div class="row">
+            <b>Price :</b> ${p.price} AED
+        </div>
+
+        <div class="row">
+            <b>Warehouse :</b> ${p.warehouse}
+        </div>
+
+        <div class="row">
+            <b>Status :</b> ${p.status}
+        </div>
+
+        <div class="qr-box">
+
+            <h3>SCAN FOR PRODUCT DETAILS</h3>
+
+            <div id="qrcode"></div>
+
+            <br>
+
+            <button class="print-btn" onclick="window.print()">
+                PRINT
+            </button>
+
+        </div>
+
+    </div>
+    `;
+
+    // Create QR for THIS product only
+    const productURL = window.location.href;
+
+    new QRCode(document.getElementById("qrcode"), {
+        text: productURL,
+        width: 180,
+        height: 180
+    });
+
+} else {
+
+    result.innerHTML = `
+        <div class="card">
+            <h2>Product Not Found</h2>
+        </div>
+    `;
+
+}
+
+</script>
+
+</body>
+</html>

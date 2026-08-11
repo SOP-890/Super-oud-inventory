@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Super Oud - Print Labels</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+    margin: 0;
+    padding: 20px;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+select, button {
+    padding: 12px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button {
+    background: #d4af37;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.label {
+    width: 50mm;
+    height: 80mm;
+    background: white;
+    border: 1px solid #222;
+    padding: 3mm;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3mm;
+}
+
+.name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.code {
+    font-size: 10px;
+    margin-top: 2mm;
+}
+
+#qrcode {
+    width: 35mm;
+    height: 35mm;
+    margin: 4mm auto;
+}
+
+.scan {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+@page {
+    size: 50mm 80mm;
+    margin: 0;
+}
+
+@media print {
+
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .controls {
+        display: none;
+    }
+
+    .label {
+        border: none;
+        margin: 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="controls">
+
+    <h2>SUPER OUD LABEL PRINT</h2>
+
+    <select id="productSelect">
+        <option value="">Select Product</option>
+    </select>
+
+    <br>
+
+    <button onclick="createLabel()">
+        CREATE LABEL
+    </button>
+
+    <button onclick="window.print()">
+        PRINT
+    </button>
+
+</div>
+
+
+<div class="label">
+
+    <div class="logo">
+        SUPER OUD
+    </div>
+
+    <div class="name" id="productName">
+        Select Product
+    </div>
+
+    <div class="code">
+        Item Code:
+        <b id="productCode">---</b>
+    </div>
+
+    <div id="qrcode"></div>
+
+    <div class="scan">
+        SCAN FOR PRODUCT DETAILS
+    </div>
+
+</div>
+
+
+<script src="products.js"></script>
+
+<script>
+
+const select = document.getElementById("productSelect");
+
+for (const code in products) {
+
+    const option = document.createElement("option");
+
+    option.value = code;
+
+    option.textContent =
+        products[code].code + " - " +
+        products[code].name;
+
+    select.appendChild(option);
+}
+
+
+function createLabel() {
+
+    const code = select.value;
+
+    if (!code) {
+        alert("Please select a product");
+        return;
+    }
+
+    const product = products[code];
+
+    document.getElementById("productName").textContent =
+        product.name;
+
+    document.getElementById("productCode").textContent =
+        product.code;
+
+    document.getElementById("qrcode").innerHTML = "";
+
+    const productURL =
+        window.location.origin +
+        window.location.pathname.replace(
+            "print.html",
+            "product.html"
+        ) +
+        "?id=" + product.code;
+
+    new QRCode(
+        document.getElementById("qrcode"),
+        {
+            text: productURL,
+            width: 132,
+            height: 132
+        }
+    );
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Super Oud Label</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+@page {
+    size: 50mm 80mm;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+.label {
+    width: 50mm;
+    height: 80mm;
+    background: white;
+    border: 1px solid #222;
+    padding: 3mm;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3mm;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2mm;
+}
+
+.code {
+    font-size: 10px;
+    margin-bottom: 2mm;
+}
+
+#qrcode {
+    width: 35mm;
+    height: 35mm;
+    margin: 3mm auto;
+}
+
+.scan {
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: 2mm;
+}
+
+.print-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #d4af37;
+    border: 0;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .label {
+        margin: 0;
+        border: none;
+    }
+
+    .print-btn {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="label">
+
+    <div class="logo">
+        SUPER OUD
+    </div>
+
+    <div class="title" id="productName">
+        Product
+    </div>
+
+    <div class="code">
+        Item Code: <b id="productCode"></b>
+    </div>
+
+    <div id="qrcode"></div>
+
+    <div class="scan">
+        SCAN FOR PRODUCT DETAILS
+    </div>
+
+</div>
+
+<div style="text-align:center;">
+    <button class="print-btn" onclick="window.print()">
+        PRINT LABEL
+    </button>
+</div>
+
+<script src="products.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+const product = products[id];
+
+if (product) {
+
+    document.getElementById("productName").textContent =
+        product.name;
+
+    document.getElementById("productCode").textContent =
+        product.code;
+
+    const productURL =
+        window.location.origin +
+        window.location.pathname.replace("label.html", "product.html") +
+        "?id=" + product.code;
+
+    new QRCode(document.getElementById("qrcode"), {
+        text: productURL,
+        width: 132,
+        height: 132
+    });
+
+} else {
+
+    document.querySelector(".label").innerHTML =
+        "<h3>Product Not Found</h3>";
+
+}
+
+</script>
+
+</body>
+</html>
