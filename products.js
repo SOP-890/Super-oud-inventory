@@ -93,7 +93,7 @@ const products = {
 "20043": {
     code: "20043",
     name: "ROOM SPRAY GAZL ML500 ",
-    stock: 13,
+    stock: 8,
     price: "99 AED",
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
