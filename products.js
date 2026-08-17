@@ -90,10 +90,37 @@ const products = {
     status: "AVAILABLE"
 
 },
+"20040": {
+    code: "20040",
+    name: "PERFUME VELOR OUD 100 ML",
+    stock: 2,
+    price: "200 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
+"20042": {
+    code: "20042",
+    name: "ROOM SPRAY MAZOON ML500 ",
+    stock: 7,
+    price: "99 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
 "20043": {
     code: "20043",
     name: "ROOM SPRAY GAZL ML500 ",
-    stock: 8,
+    stock: 7,
+    price: "99 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
+"20044": {
+    code: "20044",
+    name: "ROOM SPRAY DHANA ML500 ",
+    stock: 7,
     price: "99 AED",
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
@@ -239,6 +266,23 @@ const products = {
     name: "Spray Super Musk 100ml",
     stock: 48,
     price: "122.42 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+"050028": {
+    code: "050028",
+    name: "DHOKHUN SUMU",
+    stock: 48,
+    price: "220 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
+"050030": {
+    code: "050030",
+    name: "DHOKHUN FAWAH",
+    stock: 48,
+    price: "220 AED",
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
 
