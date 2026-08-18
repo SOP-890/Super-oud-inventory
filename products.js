@@ -90,9 +90,18 @@ const products = {
     status: "AVAILABLE"
 
 },
+"20038": {
+    code: "20038",
+    name: "PERFUME MYSTIQUE 100 ML",
+    stock: 2,
+    price: "200 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
 "20040": {
     code: "20040",
-    name: "PERFUME VELOR OUD 100 ML",
+    name: "PERFUME MAJESTY 100 ML",
     stock: 2,
     price: "200 AED",
     warehouse: "MAIN BRANCH",
@@ -252,10 +261,28 @@ const products = {
     status: "AVAILABLE"
 
 },
+"240002": {
+    code: "240002",
+    name: "MATTAR AMBER JARK",
+    stock: 48,
+    price: "250 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
 "240003": {
     code: "240003",
     name: "STORM PERFUME 200ML ",
     stock: 155,
+    price: "250 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
+"240004": {
+    code: "240004",
+    name: "DARE PERFUME 200ML",
+    stock: 48,
     price: "250 AED",
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
