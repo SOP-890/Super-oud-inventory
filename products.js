@@ -316,7 +316,7 @@ const products = {
 },
     
  "240009": {
-    code: "240009,
+    code: "240009",
     name: "DAS PERFUME 100ML",
     stock: 48,
     price: "262.50 AED",
