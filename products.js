@@ -324,7 +324,7 @@ const products = {
     status: "AVAILABLE"       
 },
 
- "240010: {
+ "240010": {
     code: "240010",
     name: "RABDAN PERFUME 100ML",
     stock: 48,
