@@ -1,7 +1,7 @@
 const products = {
 
-"20001": {
-    code: "20001",
+"020001": {
+    code: "020001",
     name: "30ML LUBAN PERFUME",
     stock: 340,
     price: "150 AED",
@@ -9,8 +9,8 @@ const products = {
     status: "AVAILABLE"
 },
 
-"20004": {
-    code: "20004",
+"020004": {
+    code: "020004",
     name: "PERFUME NOWAEIM ML100",
     stock: 128,
     price: "250 AED",
@@ -18,8 +18,8 @@ const products = {
     status: "AVAILABLE"
 },
 
-"20005": {
-    code: "20005",
+"020005": {
+    code: "020005",
     name: "PERFUME TOBACCO OUD ML100",
     stock: 152,
     price: "250 AED",
@@ -27,8 +27,8 @@ const products = {
     status: "AVAILABLE"
 },
 
-"20006": {
-    code: "20006",
+"020006": {
+    code: "020006",
     name: "PERFUME AMBER ML 30",
     stock: 317,
     price: "150 AED",
@@ -36,8 +36,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20007": {
-    code: "20007",
+"020007": {
+    code: "020007",
     name: "PERFUME MUSK ML30",
     stock: 40,
     price: "150 AED",
@@ -45,8 +45,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20009": {
-    code: "20009",
+"020009": {
+    code: "020009",
     name: "PPERFUME HIMANTAN ML30",
     stock: 70,
     price: "600 AED",
@@ -54,8 +54,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20010": {
-    code: "20010",
+"020010": {
+    code: "020010",
     name: "TOLERANCE BODY SPRAY 100ml",
     stock: 1181,
     price: "160 AED",
@@ -63,8 +63,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20011": {
-    code: "20011",
+"020011": {
+    code: "020011",
     name: "PERFUME MARS MISSION 100ML",
     stock: 539,
     price: "420 AED",
@@ -72,8 +72,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20013": {
-    code: "20013",
+"020013": {
+    code: "020013",
     name: "PERFUME COMBODIAN 30ML ",
     stock: 4,
     price: "2400 AED",
@@ -81,8 +81,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20037": {
-    code: "20037",
+"020037": {
+    code: "020037",
     name: "PERFUME VELOR OUD 100 ML",
     stock: 2,
     price: "200 AED",
@@ -90,8 +90,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20038": {
-    code: "20038",
+"020038": {
+    code: "020038",
     name: "PERFUME MYSTIQUE 100 ML",
     stock: 2,
     price: "200 AED",
@@ -99,8 +99,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20040": {
-    code: "20040",
+"020040": {
+    code: "020040",
     name: "PERFUME MAJESTY 100 ML",
     stock: 2,
     price: "200 AED",
@@ -108,8 +108,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20042": {
-    code: "20042",
+"020042": {
+    code: "020042",
     name: "ROOM SPRAY MAZOON ML500 ",
     stock: 7,
     price: "99 AED",
@@ -117,8 +117,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20043": {
-    code: "20043",
+"020043": {
+    code: "020043",
     name: "ROOM SPRAY GAZL ML500 ",
     stock: 7,
     price: "99 AED",
@@ -126,8 +126,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20044": {
-    code: "20044",
+"020044": {
+    code: "020044",
     name: "ROOM SPRAY DHANA ML500 ",
     stock: 7,
     price: "99 AED",
@@ -135,8 +135,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20046": {
-    code: "20046",
+"020046": {
+    code: "020046",
     name: "SPRAY MAJESTY ML100  ",
     stock: 30,
     price: "160 AED",
@@ -144,8 +144,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20047": {
-    code: "20047",
+"020047": {
+    code: "020047",
     name: "Spray super intense 100ML",
     stock: 31,
     price: "160 AED",
@@ -153,8 +153,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20048": {
-    code: "20048",
+"020048": {
+    code: "020048",
     name: "Spray super charm 100ML ",
     stock: 108,
     price: "160 AED",
@@ -162,8 +162,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20050": {
-    code: "20050",
+"020050": {
+    code: "020050",
     name: "SPRAY MYSTIQUE 100ML ",
     stock: 34,
     price: "160 AED",
@@ -171,8 +171,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20052": {
-    code: "20052",
+"020052": {
+    code: "020052",
     name: "PERFUME MATTAK 30ML ",
     stock: 428,
     price: "350 AED",
@@ -180,8 +180,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20056": {
-    code: "20056",
+"020056": {
+    code: "020056",
     name: "PROOM SPRAY HAYA 500ML ",
     stock: 162,
     price: "180 AED",
@@ -189,8 +189,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20057": {
-    code: "20057",
+"020057": {
+    code: "020057",
     name: "ROOM SPRAY GAYA 500ML",
     stock: 193,
     price: "180 AED",
@@ -198,8 +198,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20058": {
-    code: "20058",
+"020058": {
+    code: "020058",
     name: "ROOM SPRAY MICHAIL 500 ML",
     stock: 230,
     price: "180 AED",
@@ -207,8 +207,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20060": {
-    code: "20060",
+"020060": {
+    code: "020060",
     name: "THURSDAY COLLECTION ",
     stock: 308,
     price: "200 AED",
@@ -216,8 +216,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20061": {
-    code: "20061",
+"020061": {
+    code: "020061",
     name: "MUSK COLLECTION",
     stock: 158,
     price: "125 AED",
@@ -225,8 +225,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20063": {
-    code: "20063",
+"020063": {
+    code: "020063",
     name: "PERFUME GEARLAOUR 100 ML ",
     stock: 171,
     price: "399 AED",
@@ -234,8 +234,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20066": {
-    code: "20066",
+"020066": {
+    code: "020066",
     name: "PERFUME MARS MILLO ML80",
     stock: 19,
     price: "120 AED",
@@ -243,8 +243,8 @@ const products = {
     status: "AVAILABLE"
 
 },
-"20067": {
-    code: "20067",
+"020067": {
+    code: "020067",
     name: "SPRAY HAIR MIST 50ML",
     stock: 252,
     price: "89 AED",
@@ -295,7 +295,45 @@ const products = {
     price: "122.42 AED",
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
+
 },
+    "240007": {
+    code: "240007",
+    name: "HATTA PERFUME 100ml",
+    stock: 48,
+    price: "262.50 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+
+},
+      "240008": {
+    code: "240008",
+    name: "LIWA PERFUME 100ML",
+    stock: 48,
+    price: "262.50AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+          
+},
+      "240009": {
+    code: "240009,
+    name: "DAS PERFUME 100ML",
+    stock: 48,
+    price: "262.50 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+          
+},
+      "240010: {
+    code: "240010",
+    name: "RABDAN PERFUME 100ML",
+    stock: 48,
+    price: "262.50 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+          
+},
+    
 "050028": {
     code: "050028",
     name: "DHOKHUN SUMU",
