@@ -279,7 +279,7 @@ const products = {
     status: "AVAILABLE"
 },
     
-"020064: {
+"020064': {
     code: "020064",
     name: "NUKCHAT RAMADAN ",
     stock: 2,
@@ -325,7 +325,7 @@ const products = {
 },
     
 "020069": {
-    code: "020052",
+    code: "020069",
     name: "ROOM SPTAY JZL 500ML ",
     stock: 2,
     price: "105 AED",
