@@ -414,6 +414,15 @@ const products = {
     status: "AVAILABLE"          
 },
     
+ "240012": {
+    code: "240012",
+    name: "HINAN ROSE 30ML",
+    stock: 48,
+    price: "262.50 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"          
+},
+    
  "050028": {
     code: "050028",
     name: "DHOKHUN SUMU",
