@@ -432,6 +432,15 @@ const products = {
     status: "AVAILABLE"
 },
     
+ "050029": {
+    code: "050029",
+    name: "DHOKHUN RAWAA",
+    stock: 48,
+    price: "220 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
 "050030": {
     code: "050030",
     name: "DHOKHUN FAWAH",
