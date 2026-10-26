@@ -279,7 +279,7 @@ const products = {
     status: "AVAILABLE"
 },
     
-"020064': {
+"020064": {
     code: "020064",
     name: "NUKCHAT RAMADAN ",
     stock: 2,
