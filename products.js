@@ -191,7 +191,7 @@ const products = {
     
 "020054": {
     code: "020054",
-    name: "SPRAY MYSTIQUE 100ML ",
+    name: "SPRAY SENSE 100ML ",
     stock: 428,
     price: "150 AED",
     warehouse: "MAIN BRANCH",
