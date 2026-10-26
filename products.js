@@ -11,7 +11,7 @@ const products = {
 
 "020004": {
     code: "020004",
-    name: "PERFUME NOWAEIM ML100",
+    name: "PERFUME NAWAEIM ML100",
     stock: 128,
     price: "250 AED",
     warehouse: "MAIN BRANCH",
@@ -180,9 +180,36 @@ const products = {
     status: "AVAILABLE"
 },
     
+"020053": {
+    code: "020053",
+    name: "ATIYAF COLLECTION ",
+    stock: 0,
+    price: "350 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
+"020054": {
+    code: "020054",
+    name: "SPRAY MYSTIQUE 100ML ",
+    stock: 428,
+    price: "150 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
+"020055": {
+    code: "020055",
+    name: "NIGHT LUXARY COLLECTION ",
+    stock: 4,
+    price: "500 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
 "020056": {
     code: "020056",
-    name: "PROOM SPRAY HAYA 500ML ",
+    name: "ROOM SPRAY HAYA 500ML ",
     stock: 162,
     price: "180 AED",
     warehouse: "MAIN BRANCH",
@@ -207,6 +234,15 @@ const products = {
     status: "AVAILABLE"
 },
     
+"020059": {
+    code: "020059",
+    name: "CUTE COLLECTION ",
+    stock: 0,
+    price: "350 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
 "020060": {
     code: "020060",
     name: "THURSDAY COLLECTION ",
@@ -225,9 +261,36 @@ const products = {
     status: "AVAILABLE"
 },
     
+"020062": {
+    code: "020062",
+    name: "NATIONAL BOX ",
+    stock: 0,
+    price: "350 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
 "020063": {
     code: "020063",
-    name: "PERFUME GEARLAOUR 100 ML ",
+    name: "PERFUME GUARLAOR 100 ML ",
+    stock: 171,
+    price: "399 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
+"020064: {
+    code: "020064",
+    name: "NUKCHAT RAMADAN ",
+    stock: 2,
+    price: "350 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
+"020065": {
+    code: "020065",
+    name: "NATIONAL KUWAIT BOX ",
     stock: 171,
     price: "399 AED",
     warehouse: "MAIN BRANCH",
@@ -248,6 +311,24 @@ const products = {
     name: "SPRAY HAIR MIST 50ML",
     stock: 252,
     price: "89 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
+"020068": {
+    code: "020068",
+    name: "PERFUME BEAN MILLO 80ML ",
+    stock: 0,
+    price: "125 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
+},
+    
+"020069": {
+    code: "020052",
+    name: "ROOM SPTAY JZL 500ML ",
+    stock: 2,
+    price: "105 AED",
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
 },
@@ -341,7 +422,7 @@ const products = {
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
 },
-
+    
 "050030": {
     code: "050030",
     name: "DHOKHUN FAWAH",
@@ -349,7 +430,15 @@ const products = {
     price: "220 AED",
     warehouse: "MAIN BRANCH",
     status: "AVAILABLE"
-
+},
+    
+"050033": {
+    code: "050033",
+    name: "DHOKHUN SIGNATURE",
+    stock: 6,
+    price: "220 AED",
+    warehouse: "MAIN BRANCH",
+    status: "AVAILABLE"
 }
 
 };
